@@ -1,5 +1,6 @@
 // hum yha dotenv ko setup krne ki jagah scripts in package.json mein ' "dev": "nodemon -r dotenv/config src/index.js" ' ye bhi kr sakte
 // -r means required . ye pre load kr deta hai dotenv ko before running the index.js file
+// humne kra bhi hai yhi bcoz humne yha dotenv.config se pehle kuch imorts kre hai jinki wajah se code phat jata warna
 import dotenv from 'dotenv';
 import connectDB from './db/index.js';
 import { app } from './app.js';

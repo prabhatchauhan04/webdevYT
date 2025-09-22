@@ -177,7 +177,20 @@ Extract info from token payload
 Note : jwt is also known as bearer token bcoz jo isko bear krta hai (matlab jiske paas ye hai) uski request serve krdeni hai
 */
 
+/*
+Access Token :--
+What? A short-lived token that proves your identity and lets you access protected resources (like APIs).
+Purpose: Used to authorize requests.
+Lifetime: Usually expires quickly (e.g., 15 minutes to 1 hour) for security.
+Example: A JWT you send with each API request.
 
+Refresh Token :--
+What? A long-lived token used to get a new access token without requiring the user to log in again.
+Purpose: Keeps the user logged in by refreshing access tokens silently.
+Lifetime: Usually much longer (days, weeks, or months).
+Usage: Sent only to the authentication server to get a fresh access token.
+Security: Should be stored securely (e.g., HttpOnly cookies), because if stolen, attackers can keep refreshing tokens.
+*/
 
 
 
